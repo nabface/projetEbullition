@@ -432,18 +432,30 @@ left : 15%;
 	padding-left: 0 !important;
 }
 
-.deco p, .acces p, .vetm p  {
-	font-size: 11px;
+.liensDirect li   {
+	font-size: 14px;
 	text-align: left;
 	width: 110px;
-	margin: 0 0 30px 20px;
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+	font-family : 'OpenSans-Light';
+}
+
+.liensDirect li a{
+	text-decoration: none;
 	color: #3B3B3B;
+	line-height: 1.8;
+}
+
+.liensDirect li a:hover{
+	color: rgb(219,117,156);
 }
 
 
 
 @media screen and (min-width: 240px) and (max-width: 480px) {
-	.deco p, .acces p, .vetm p  {
+	.liensDirect li  {
 	display: none;
 }
 	.titre-deco, .titre-acces, .titre-vetm {
