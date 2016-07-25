@@ -71,7 +71,7 @@ a:hover {
 
 .navbar {
 	background-image: url('../images/bg-color.jpg');
-	repeat : repeat;
+	background-repeat : repeat;
 	padding-right : 10px;
 	margin : 0 !important;
 	font-family: 'OpenSans-Light';
@@ -151,6 +151,8 @@ li:hover ul {
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: #ffffff;
 }
+
+
 /*///////////HEADER////////////
 ////////////////////////////*/
 
@@ -315,7 +317,7 @@ left : 15%;
 	border-right :12px double rgba(153,51,153,0.8);
 	width : 320px;
 	margin : auto;
-	line-height : 0.3;
+	line-height : 0.2;
 	
 }
 
@@ -624,9 +626,20 @@ margin : 20px 4px 20px 4px;
   }
 
 
+.case{
+	margin-bottom: 20px;
+	color:black;
+    font-family: 'OpenSans-Light';
+}
 
-
-
+.form-control::-moz-placeholder {
+    color:black;
+    font-family: 'OpenSans-Light';
+}
+.form{
+	margin-top: 40px;
+}
+/*
   .case{
     background-color: rgb(243,243,243);
    border-radius: 0;
@@ -646,7 +659,7 @@ margin : 20px 4px 20px 4px;
     margin-top: 5px;
     padding-left: 10px;
     padding-top: 4px;
-}
+}*/
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
