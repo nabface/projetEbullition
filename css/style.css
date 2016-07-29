@@ -317,7 +317,7 @@ left : 15%;
 	border-right :12px double rgba(153,51,153,0.8);
 	width : 320px;
 	margin : auto;
-	line-height : 0.2;
+	line-height : 0.1;
 	
 }
 
@@ -339,6 +339,7 @@ left : 15%;
 	color : #606060;
 	margin : 0 0 20px 0;
 	text-align: center;
+	font-family : 'OpenSans-Light';
 }
 
 .blanc, #marque h3 {
@@ -358,7 +359,7 @@ left : 15%;
 	text-align: center;
 }
 
-
+#marque h4:hover{color : #606060;}
 
 .titre-vetm {
 	background-color : #fff;
@@ -369,13 +370,7 @@ left : 15%;
 	background-position: 90% 90%;
 }
 
-.cadreV {
-	height : 72px;
-	width : 100%;
 
-	
-
-}
 
 .titre-acces {
 	background-color : #fff;
@@ -386,13 +381,8 @@ left : 15%;
 	background-position: 90% 90%;
 }
 
-.cadreA {
-	height : 72px;
-	width : 100%;
-;
-	
 
-}
+.titre-deco:hover,.titre-acces:hover,.titre-vetm:hover {background-color: rgba(236,236,236,0.3); color: #fff;}
 
 .titre-deco {
 	background-color : #fff;
@@ -403,13 +393,6 @@ left : 15%;
 	background-position: 90% 70%;
 	
 }
-
-.cadreD {
-	height : 72px;
-	width : 100%;
-	
-}
-
 
 
 
@@ -596,12 +579,13 @@ left : 15%;
 
 .iconesContact{
 display: flex;
-    justify-content:center;
+justify-content:center;
+
 
 }
 .iconesContact img {
 cursor : pointer;
-margin : 20px 4px 20px 4px;
+margin : 20px 4px 10px 4px;
 
 }
    
@@ -616,22 +600,26 @@ margin : 20px 4px 20px 4px;
     font-family: 'OpenSans-Light';
     font-size: 47px;
 }
-.envoyer{
-    text-align: center;
-    font-weight: bold;
-    font-size: 17px;
-    color: rgb(119,74,169);
-    margin-top: 20px;
-  }
-  .envoyer p{
-    font-size: 15px;
-    margin-top: 10px;
-    font-weight: normal;
-    
-  }
-  .envoyer img{
+
+  .envoyer{
     margin-top: 30px;
+    border :0;
+    height: 70px;
+    background-image: url('../images/send.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: 'OpenSans-Light';
+    font-size: 18px;
+    color: rgb(119,74,169);
+    padding-bottom : 0!important;
+    line-height: 5;
   }
+
+  .envoyer:hover{
+  	background-color: #fff;
+  	color: rgb(195,195,195);
+  }
+
   .haut{
     color: rgb(184,184,184);
     
@@ -650,6 +638,14 @@ margin : 20px 4px 20px 4px;
 }
 .form{
 	margin-top: 40px;
+}
+.formulaire p{
+height: 80px;
+margin : 20px auto ;
+padding-top: 20px;
+width: 60%;
+
+border-top: 1px solid rgba(195,195,195,0.5);
 }
 /*
   .case{
