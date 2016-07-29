@@ -510,27 +510,19 @@ left : 15%;
 	margin-top: 20px;
 }
 
-.extrait:last-child {
-	margin-bottom: 40px;
-}
+.extrait:last-child {margin-bottom: 40px;}
 
 #livreDOR h4 {
 	font-size: 21px;
 	color: #9E2E9C;
 	line-height: 0;
-	text-align: left;
-	
+	text-align: left;	
 }
 
-.date{
-	text-align: left;
-}
+.date{text-align: left;}
 
-.Cmnt p {
-	text-align: left;
-	width : auto;
-
-}
+.Cmnt p {text-align: left;width : auto;}
+.lienLivre{color: #9E2E9C;}
 
 .livreDOR .contenu {
 	height: auto;
@@ -539,29 +531,22 @@ left : 15%;
 	margin-bottom: 40px;
 }
 
-.liensLivre {
+.iconConsult,.iconSigner{
+height: 60px;
+text-align: center;
+background-repeat: no-repeat;
+background-position: 6% center ;
+border :0;
 
+color: #663398;
+font-size: 21px;
+font-family : 'OpenSans-Light';
+margin-bottom: 20px;
 }
 
-.liensLivre .iconConsult {
-	width : 59;
-	height: 39;
-	text-align: center;
-	background-image: url('../images/lunettes.png');
-	background-repeat: no-repeat;
-	background-position: top center;
+.iconConsult {background-image: url('../images/lunettes.png');}
 
-}
-
-.liensLivre .iconSigner {
-	width : 40;
-	height: 38;
-	text-align: center;
-	background-image: url('../images/bulle.png');
-	background-repeat: no-repeat;
-	background-position: top center;
-	
-}
+.iconSigner {background-image: url('../images/bulle.png');}
 
 .liensLivre a{
 	color: #663398;
@@ -580,13 +565,10 @@ left : 15%;
 .iconesContact{
 display: flex;
 justify-content:center;
-
-
 }
 .iconesContact img {
 cursor : pointer;
 margin : 20px 4px 10px 4px;
-
 }
    
    .titre {
@@ -620,10 +602,7 @@ margin : 20px 4px 10px 4px;
   	color: rgb(195,195,195);
   }
 
-  .haut{
-    color: rgb(184,184,184);
-    
-  }
+ .haut{color: rgb(184,184,184);}
 
 
 .case{
