@@ -202,14 +202,18 @@ color: rgb(99,99,99);
 ////////////////////////////*/
 
 #marque{text-align: center;}
+.marque{
+background-image:url('../images/needle.png');
+background-repeat: no-repeat;
+background-position:  center 40px;}
 .titre h2 {
 color: #DAD8D9;
 font-family: 'OpenSans-Light';
 font-size: 47px;
-border-left :12px double  rgba(153,51,153,0.8);
-border-right :12px double rgba(153,51,153,0.8);
+/*border-left :12px double  rgba(153,51,153,0.8);
+border-right :12px double rgba(153,51,153,0.8);*/
 width : 320px;
-margin : auto;
+margin : 40px auto;
 line-height : 0.1;
 }
 .titre {height : auto;}
@@ -335,7 +339,10 @@ font-size: 14px; font-family :'OpenSans-Light';
 
 /*///////////LIVRE D'OR///////////
 ////////////////////////////*/
-
+.livreDOR{
+background-image:url('../images/book.png');
+background-repeat: no-repeat;
+background-position:  center 40px;}
 .extrait {
 height: auto;
 width : ;
@@ -354,8 +361,12 @@ line-height: 0; text-align: left;
 .livreDOR .contenu {
 height: auto;
 background-repeat: repeat;
-padding: 10px 0 40px 0;
+padding: 50px 0 40px 0;
 margin-bottom: 40px;
+}
+.iconConsult:hover,.iconSigner:hover{
+background-color : rgba(255,255,255,0.5);
+color : rgb(153,51,153);
 }
 .iconConsult,.iconSigner{
 height: 60px;
@@ -379,7 +390,10 @@ margin-top: 40px;
 
 /*////////// FOOTER //////////
 ////////////////////////////*/
-
+.contact{
+background-image:url('../images/social.png');
+background-repeat: no-repeat;
+background-position:  center 40px;}
 .iconesContact{
 display: flex;
 justify-content:center;
@@ -429,10 +443,10 @@ width: 60%;
 border-top: 1px solid rgba(195,195,195,0.5);
 }
 .inlineFooterLinks li{
-display: inline; text-decoration: none; text-align: center;
+display: inline; text-decoration: none;font-size: 11px;
 }
 .inlineFooterLinks li a{
-margin: 0 12px 0 12px; font-size: 13px;
+margin: 0 6px 0 6px; font-size: 11px;
 color: rgb(153,51,153);
 }
 .inlineFooterLinks li a:hover{
@@ -442,6 +456,11 @@ color: rgb(195,195,195);
 margin: 60px auto;
 border-top: 1px solid rgb(225,225,225);
 height: 80px; line-height: 3;
+padding : 0!important; text-align :left;
+}
+.right li{text-align:right;float:right;margin-top:6px;}
+@media screen and (max-width: 700px){
+.inlineFooterLinks li{display: block;line-height:2;}
 }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
