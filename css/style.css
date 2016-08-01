@@ -154,9 +154,10 @@ font-size: 18px;
 color: rgb(195,195,195);
 padding-bottom : 0!important;
 line-height: 5;
+background-color: rgba(184,184,184,0);
 }
 .envoyer:hover{
-background-color: #fff;
+background-color: rgba(184,184,184,0);
 color: #993399;
 background-image: url('../images/SendGrey.png');
 }
@@ -506,9 +507,28 @@ background-color:#DDD7DE;
 height:240px;
 width:100%;
 margin-bottom: 70px;
+
 }
 
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    			|| PAGE LIVRE D'OR ||
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+.livreDOR .extrait{font-family : 'OpenSans-Light';}
+.pager li a{ color :rgb(121,116,114); }
+.pager li a:hover{ color :#9E2E9C; }
+.pagination{margin-top: -20px;}
+.zonePostuler{
+height: auto;width : 100%;
+background-color: #C04FA1;
+background-image:url('../images/bgTelechargement.png');
+text-align: center;
+padding : 20px 0 40px 0;
+}
+.container-fluid {padding:0!important;}
+.zonePostuler h4{font-family: 'OpenSans-Semibold'; color:#fff!important;margin-bottom: 30px;}
+.zonePostuler .btn{background-color:none;}
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                     			|| PAGE FICHE PRODUIT ||
