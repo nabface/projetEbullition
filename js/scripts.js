@@ -6,11 +6,11 @@ $(document).ready(function(){
    $(document).scroll(function() { 
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
-	  $('.navbar-brand').css('visibility','visible');
+    $('.navbar-brand').css('visibility','visible');
        } else {
           $('.navbar-brand').css('visibility','hidden');
        }
-   	});
+    });
     }
 });
 
@@ -58,5 +58,4 @@ $('.carousel').carousel();
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
 });
-
 
