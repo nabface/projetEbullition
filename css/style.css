@@ -53,8 +53,13 @@ a:hover {text-decoration-line : none;}
 /*///////////FIL D ARIANE///////////////////////
 ///////////////////////////////////////////////*/
 .filDariane{margin-bottom: 20px;}
-.filDariane a{color:#DCD5DD;}
-.filDariane a:hover{color:#914BAF;}
+.filDariane a{
+font-family: 'OpenSans-Light';margin-left:4px;
+font-size:11px;color:#914BAF;}
+.filDariane a:hover{color:#DCD5DD;}
+.filDariane a:last-child{
+margin-left:8px;color:#DCD5DD;}
+.filDariane a:last-child:hover{color:#914BAF;}
 
 /*///////////NAVBAR//////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////*/
@@ -369,7 +374,7 @@ background-position: 90% 70%;
 background-image : url('../images/bg-grey.jpg');
 background-color: #ECECEC;
 height : auto; width : 100%;
-padding: 20px 0 0 0;
+padding: 40px 0 0 0;
 }
 .vetm, .access, .deco {
 margin-right: 0;
@@ -474,7 +479,7 @@ text-align: center;
 background-repeat: no-repeat;
 background-position: 6% center ;
 border :0;
-color: #E0DFDF;
+color:#663398 ;
 font-size: 21px;
 font-family : 'OpenSans-Light';
 margin-bottom: 20px;
@@ -484,7 +489,7 @@ margin-bottom: 20px;
 .iconConsult:hover {background-image: url('../images/lunettesGrey.png');}
 .iconSigner:hover {background-image: url('../images/bulleGrey.png');}
 .liensLivre a{
-color: #663398; font-size: 21px;
+color: #E0DFDF; font-size: 21px;
 font-family : 'OpenSans-Light';
 margin-top: 40px;
 }
@@ -496,25 +501,105 @@ margin-top: 40px;
 
 .contenu-liste{
 padding:20px 0 20px 0;
-height:1000px;
+height:auto;
 }
-.thum{
-height:auto;display: flex;
-justify-content:center;
+.imghvr-fade{
+position: relative;
+display: inline-block;
+margin: 0px;
+max-width: 100%;
+color: #fff;
+overflow: hidden;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+}
+.vignt{
+height:320px;
+position: relative;
+
 }
 .contenu-liste img {
-background-color:#DDD7DE;
-height:240px;
-width:100%;
-margin-bottom: 70px;
-
+margin-bottom: 30px;
+overflow:auto;
 }
 
+
+figcaption {
+opacity: 0;
+background-color: #fff;
+position: absolute;
+padding: 30px;
+position: absolute;
+top: 0; bottom: 0; left: 0; right: 0;
+}
+figcaption h3{  color: #6C398B;
+    padding: 0px;
+    margin: 0;
+    font-size: 2.4em;
+    line-height: 1.4em;
+}
+
+figcaption p {  color: #6C398B;
+    padding: 0px;
+    margin: 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+.imghvr-fade *:before,
+.imghvr-fade *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.imghvr-fade figcaption {
+  opacity: 0;
+}
+.imghvr-fade:hover > img {
+  opacity: 0.9;
+}
+.imghvr-fade:hover figcaption {
+  opacity: 0.7;
+}
+.imghvr-fade:hover figcaption {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+.imghvr-fade figcaption {
+  -webkit-transform: translate(0px, 15%);
+  transform: translate(0px, 15%);
+
+}
+/* imghvr-fade-in-down
+   ----------------------------- */
+.imghvr-fade-in-down figcaption {
+  -webkit-transform: translate(0, -15%);
+  transform: translate(0, -15%);
+}
+/* imghvr-fade-in-left
+   ----------------------------- */
+.imghvr-fade-in-left figcaption {
+  -webkit-transform: translate(-15%, 0);
+  transform: translate(-15%, 0);
+}
+/* imghvr-fade-in-right
+   ----------------------------- */
+.imghvr-fade-in-right figcaption {
+  -webkit-transform: translate(15%, 0px);
+  transform: translate(15%, 0px);
+}
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                     			|| PAGE LIVRE D'OR ||
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
+.contnP p{text-align:left;padding-left:0;}
 .livreDOR .extrait{font-family : 'OpenSans-Light';}
 .pager li a{ color :rgb(121,116,114); }
 .pager li a:hover{ color :#9E2E9C; }
@@ -523,12 +608,42 @@ margin-bottom: 70px;
 height: auto;width : 100%;
 background-color: #C04FA1;
 background-image:url('../images/bgTelechargement.png');
-text-align: center;
-padding : 20px 0 40px 0;
+color : #fff;
+padding : 40px 0 40px 0;
 }
 .container-fluid {padding:0!important;}
 .zonePostuler h4{font-family: 'OpenSans-Semibold'; color:#fff!important;margin-bottom: 30px;}
+.zonePostuler p{color: #76105F;}
 .zonePostuler .btn{background-color:none;}
+.pagelivreDOR{
+background-image:url('../images/book.png');
+background-repeat: no-repeat;
+background-position:  center 2px;}
+.pagelivreDOR h2 {
+margin-top: 10px;	
+}
+.zonePostuler .form-group{padding-left:0!important;}
+@media screen and (max-width: 992px){
+.txtAra {padding-left:0;}
+}
+.pagelivreDOR{font-family: 'OpenSans-Light';}
+.validerCmnt{
+margin-top: 20px; border :0; height: 80px;
+background-image: url('../images/checkedWhite.png');
+background-repeat: no-repeat;
+background-position: top center;
+font-family: 'OpenSans-Light';
+font-size: 18px;
+color: #fff;
+padding-bottom : 0!important;
+line-height: 8;
+background-color: rgba(184,184,184,0);
+}
+.validerCmnt:hover{
+background-color: rgba(184,184,184,0);
+color: #76005F;
+background-image: url('../images/checkedTotalWhite.png');
+}}
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                     			|| PAGE FICHE PRODUIT ||
